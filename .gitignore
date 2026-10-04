@@ -1,0 +1,40 @@
+# Python bytecode and test/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local editor and operating-system files
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Private working notes
+/concept/Summaries and context/Session 1 Context
+/concept/Summaries and context/Session 1 Summary
+
+# Large source raster and scratch binary
+/data/*.img
+/src/mars_test.bin
+
+# Generated analysis outputs
+/outputs/
