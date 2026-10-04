@@ -1,6 +1,45 @@
-# RedVector
+# RedVector — Interplanetary Survival Guide: Martian Map
 
-Small Python experiments for reading and analyzing Mars elevation data.
+Goal: build an interactive Mars mission-planning platform for the 2026 NASA Space Apps Challenge. The system should combine multiple NASA datasets into a layered Martian map that helps a hypothetical astronaut choose and plan a route.
+
+Core envisioned workflow:
+
+**Start location + Destination + Mission objective**
+→ terrain/science analysis
+→ route generation
+→ route visualization + statistics
+→ mission recommendation.
+
+Target capabilities:
+
+* Interactive Mars map
+* Start/destination selection
+* NASA-derived elevation/terrain
+* Shortest/safest/scientific/balanced routes
+* Terrain difficulty and slope
+* Hazards
+* Scientific-interest locations
+* Elevation profile
+* Route distance/time
+* Multiple NASA science layers
+* Eventually imagery, ice/water, sunlight, communications, rover/science locations, etc.
+
+Planned architecture:
+
+**Frontend:** React + Leaflet/MapLibre
+**Backend:** Python + FastAPI
+**Data processing:** NumPy/geospatial tooling
+**NASA data:** MOLA, HiRISE, CTX, potentially other mission datasets
+**Algorithms:** Dijkstra → A* with terrain-aware cost functions.
+
+The eventual route cost concept is:
+
+`route_cost = distance + elevation_penalty + slope_penalty + terrain_penalty + hazard_penalty`
+
+The MVP priority is to make **one route-planning capability excellent**, then add layers around it rather than attempting every feature immediately. 
+
+---
+
 
 ## Requirements
 
