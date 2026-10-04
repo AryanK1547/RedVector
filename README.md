@@ -4,7 +4,7 @@ Small Python experiments for reading and analyzing Mars elevation data.
 
 ## Requirements
 
-- Python 3.11 or later
+- Python 3.12 or later
 - The compatible packages listed in `requirements.txt`
 - The MOLA elevation raster at `data/megt90n000fb.img` for scripts that read the full dataset
 
